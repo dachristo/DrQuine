@@ -6,7 +6,7 @@
 #    By: dchristo <ybarbier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 11:35:46 by dchristo          #+#    #+#              #
-#    Updated: 2017/03/11 19:42:34 by dchristo         ###   ########.fr        #
+#    Updated: 2017/03/12 18:01:22 by dchristo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,6 @@ SULLY_C = Sully.c
 
 COLLEEN_TMP = tmp_colleen
 GRACE_TMP = Grace_kid.c
-SULLY_TMP = tmp_sully
 
 CC = gcc
 
@@ -69,7 +68,7 @@ sully:
 	@echo "|           \/                \/      |";
 	@echo "+-------------------------by dchristo-+";	
 
-diff: diff_colleen diff_grace diff_sully
+diff: diff_colleen diff_grace
 
 diff_colleen:
 	./colleen > $(COLLEEN_TMP) ; diff $(COLLEEN_TMP) $(COLLEEN_C)
@@ -77,11 +76,11 @@ diff_colleen:
 diff_grace:
 	./grace ; chmod 755 $(GRACE_TMP) ;  diff $(GRACE_TMP) $(GRACE_C)
 
-diff_sully:
-	./sully > $(SULLY_TMP) ; diff $(SULLY_TMP) $(SULLy_C)
+clean_sully:
+	rm -rf Sully_* Sully
 
-clean: 
-	rm -rf $(COLLEEN_TMP) $(GRACE_TMP) $(SULLY_TMP)
+clean: clean_sully 
+	rm -rf $(COLLEEN_TMP) $(GRACE_TMP)
 
 fclean: clean
 	rm -rf $(COLLEEN) $(GRACE) $(SULLY)
