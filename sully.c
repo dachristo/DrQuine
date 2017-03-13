@@ -4,7 +4,7 @@
 
 int main()
 {
-	int i = 6;
+	int i = 5;
 	char fn[10] = "Sully_x.c";
 	char cmd[40] = "clang ./Sully_x.c -o Sully_x; ./Sully_x";
 	
