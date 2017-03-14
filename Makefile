@@ -6,7 +6,7 @@
 #    By: dchristo <ybarbier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 11:35:46 by dchristo          #+#    #+#              #
-#    Updated: 2017/03/12 18:01:22 by dchristo         ###   ########.fr        #
+#    Updated: 2017/03/14 22:25:01 by dchristo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,4 +87,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean re all
+.PHONY: clean fclean re all diff_colleen diff_grace diff sully grace colleen
