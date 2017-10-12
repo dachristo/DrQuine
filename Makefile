@@ -6,7 +6,7 @@
 #    By: dchristo <ybarbier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 11:35:46 by dchristo          #+#    #+#              #
-#    Updated: 2017/03/14 22:25:01 by dchristo         ###   ########.fr        #
+#    Updated: 2017/10/12 18:37:22 by dchristo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SULLY_C = Sully.c
 
 COLLEEN_TMP = tmp_colleen
 GRACE_TMP = Grace_kid.c
+GRACE_TMP_JS = Grace_kid.js
 
 CC = gcc
 
@@ -80,7 +81,7 @@ clean_sully:
 	rm -rf Sully_* Sully
 
 clean: clean_sully 
-	rm -rf $(COLLEEN_TMP) $(GRACE_TMP)
+	rm -rf $(COLLEEN_TMP) $(GRACE_TMP) $(GRACE_TMP_JS)
 
 fclean: clean
 	rm -rf $(COLLEEN) $(GRACE) $(SULLY)

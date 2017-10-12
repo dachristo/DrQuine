@@ -7,7 +7,6 @@ int main(void)
 {
 	int i = 5;
 	int nb = 48;
-	printf("%s\n", __FILE__);
 	if (strcmp(__FILE__,"Sully.c") != 0)
 		nb = 47;
 	char fn[10] = "Sully_x.c";
